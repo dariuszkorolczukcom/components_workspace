@@ -20,6 +20,7 @@ class Main extends Component {
         return (
             <div>
                 <Header />
+                <h3>Welcome</h3>
                <ul>
                 <li>[12 step Width Slider]
                 <p>using the slider dynamically changes the width of a column using bootstrap class.</p>
