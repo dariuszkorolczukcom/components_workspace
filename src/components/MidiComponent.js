@@ -76,7 +76,7 @@ console.log(inst);
                             value={this.state.sound}
                             onChange={this.handleChangeSound}
                             min={0}
-                            max={440}
+                            max={140}
                             trackStyle={{ backgroundColor: 'blue', height: 10 }}
                             railStyle={{ backgroundColor: 'red', height: 10 }}
                             handleStyle={{
