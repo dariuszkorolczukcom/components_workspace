@@ -1,5 +1,9 @@
 This is a workspace for components I created for future reuse.
 
+Check the working examples here:
+
+http://www.crazystuff.club:8080
+
 1. install the latest version of Nodejs 
 https://nodejs.org)
 
