@@ -20,6 +20,13 @@ class FlexWidthSlider extends Component {
     render() {
         return (
             <div className="container">
+                <h1>Flex Width Slider</h1>
+                <p>Use the slider to dynamically change the width of a columns using style=width value.</p>
+                <ol>
+                    <li>the slider takes the value, creates second value for the other &lt;div> by substracting the width of the first &lt;div>, and writes it to the state</li>
+                    <li>then it is passed to the &lt;div> inside the className (using backquotes)</li>
+                    <li>the Value range is from 1-99</li>
+                </ol>
                 <Row>
                     <div style={style}>
                         <Slider

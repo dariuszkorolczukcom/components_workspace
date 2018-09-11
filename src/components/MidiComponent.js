@@ -8,7 +8,7 @@ class MidiSlider extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            sound: 50, 
+            sound: 50,
             duration: .5,
             instrument: 1,
             instrumentName: 'chosen instrument'
@@ -21,32 +21,42 @@ class MidiSlider extends Component {
         this.midiSounds.playChordNow(this.state.instrument, [this.state.sound], this.state.duration);
     }
     DisplayInstrument() {
-    
-     const inst = this.midiSounds.player.loader.instrumentInfo(this.state.instrument).title
-    
-console.log(inst);
-     return inst;
+
+        const inst = this.midiSounds.player.loader.instrumentInfo(this.state.instrument).title
+
+        console.log(inst);
+        return inst;
     }
 
     handleChangeInstrument = (instrument) => {
-        this.setState({ instrument: instrument, instrumentName: this.midiSounds.player.loader.instrumentInfo(this.state.instrument).title.split(':')[0]});
+        this.setState({ instrument: instrument, instrumentName: this.midiSounds.player.loader.instrumentInfo(this.state.instrument).title.split(':')[0] });
     }
 
     handleChangeSound = (sound) => {
-        this.setState({ sound: sound});
+        this.setState({ sound: sound });
     }
     handleChangeDuration = (duration) => {
-        this.setState({ duration: duration});
+        this.setState({ duration: duration });
     }
 
     render() {
-        
-        
+
+
         return (
             <div className="container">
-            <Row>
+                <h1>[Midi Sound Player]</h1>
+                <p>plays chosen Midi sound depending on:</p>
+
+                <ol>
+                    <li>Set the instrument and send it to state</li>
+                    <li>Set the sound pitch and send it to state</li>
+                    <li>Set the sound duration and send it to state</li>
+                    <li>Press play to play the chosen sound</li>
+                    <li>Press 'MIDI SOUNDS' button to open control panel (volume, equalizer, echo)</li>
+                </ol>
+                <Row>
                     <Col className='col-9'>
-                    Set instrument
+                        Set instrument
                         <Slider
                             value={this.state.instrument}
                             onChange={this.handleChangeInstrument}
@@ -66,12 +76,12 @@ console.log(inst);
                         />
                     </Col>
                     <Col className='col-3'>
-                    <p>&#127929; {this.state.instrumentName}</p>
+                        <p>&#127929; {this.state.instrumentName}</p>
                     </Col>
-                    </Row>
+                </Row>
                 <Row>
-                <Col className='col-10'>
-                                    Set sound
+                    <Col className='col-10'>
+                        Set sound
                         <Slider
                             value={this.state.sound}
                             onChange={this.handleChangeSound}
@@ -90,11 +100,11 @@ console.log(inst);
                         />
                     </Col>
                     <Col className='col-2'>
-                    <p>&#127932; {this.state.sound}</p>
+                        <p>&#127932; {this.state.sound}</p>
                     </Col>
-                    </Row><Row>
+                </Row><Row>
                     <Col className='col-10'>
-                                        Set duration
+                        Set duration
                         <Slider
                             value={this.state.duration}
                             onChange={this.handleChangeDuration}
@@ -114,22 +124,22 @@ console.log(inst);
                         />
                     </Col>
                     <Col className='col-2'>
-                    <p>{this.state.duration}</p>
+                        <p>{this.state.duration}</p>
                     </Col>
                 </Row>
-                    <Row>
-                        <Col className='col-5'>
-                    <button onClick={this.playTestInstrument.bind(this)}>Play</button>
+                <Row>
+                    <Col className='col-5'>
+                        <button onClick={this.playTestInstrument.bind(this)}>Play</button>
                     </Col>
                     <Col className='col-5'>
-        <MIDISounds 
-        ref={(ref) => (this.midiSounds = ref)} appElementName="root" instruments={[3]} 
-        />
-        </Col>
-        </Row>
+                        <MIDISounds
+                            ref={(ref) => (this.midiSounds = ref)} appElementName="root" instruments={[3]}
+                        />
+                    </Col>
+                </Row>
 
-             
-               
+
+
             </div>
         )
     }

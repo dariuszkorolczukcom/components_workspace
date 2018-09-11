@@ -20,6 +20,13 @@ class WidthSlider extends Component {
     render() {
         return (
             <div className="container">
+                <h1>12 step Width Slider</h1>
+                <p>Use the slider to dynamically change the width of a columns using bootstrap class col value.</p>
+                <ol>
+                    <li>the slider takes the value, creates second value for the other &lt;Col> by substracting the width of the first &lt;Col>, and writes it to the state</li>
+                    <li>then it is passed to the &lt;Col> inside the className (using backquotes)</li>
+                    <li>the Value range is from 1-12</li>
+                </ol>
                 <Row>
                     <div style={style}>
                         <Slider
@@ -42,20 +49,22 @@ class WidthSlider extends Component {
                     <p>{this.state.value} /  {this.state.value2}</p>
                 </Row>
                 <Row>
-                    <div style={{
-                        border: '5px solid blue',
-                        backgroundColor: 'blue', height: '50px'
-                    }}
-                        className={`col-12 col-md-${this.state.value}`}
+                    <Col
+                        style={{
+                            border: '5px solid blue',
+                            backgroundColor: 'blue', height: '50px'
+                        }}
+                        className={`col-${this.state.value}`}
                     >
-                    </div>
-                    <div style={{
-                        border: '5px solid red',
-                        backgroundColor: 'red', height: '50px'
-                    }}
-                        className={`col-12 col-md-${this.state.value2}`}
+                    </Col>
+                    <Col
+                        style={{
+                            border: '5px solid red',
+                            backgroundColor: 'red', height: '50px'
+                        }}
+                        className={`col-${this.state.value2}`}
                     >
-                    </div>
+                    </Col>
                 </Row>
             </div>
         )

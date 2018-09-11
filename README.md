@@ -36,7 +36,7 @@ using the slider dynamically changes the width of a column using bootstrap class
 does the same job as the [12 step Width Slider], but changes the style width of the columns
 
 ---
-[Midi Slider]
+[Midi Sound Player]
 
 plays chosen Midi sound
 
@@ -44,6 +44,7 @@ plays chosen Midi sound
 2. set the sound pitch and send it to state
 3. set the sound duration and send it to state
 4. press play to play the chosen sound
+5. press 'MIDI SOUNDS' button to open control panel (volume, equalizer, echo)
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

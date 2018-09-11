@@ -21,20 +21,23 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <Navbar dark color="dark" expand="md">
+                <Navbar expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/widthslider'>12 step Width Slider</NavLink>
+                            <Nav tabs navbar>
+                            <NavItem>
+                                    <NavLink className="nav-link" to='/home'>Home</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/flexwidthslider'>Flex Width Slider</NavLink>
+                                    <NavLink className="nav-link" to='/widthslider'>12_step_Width_Slider</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/midislider'>Midi Slider</NavLink>
+                                    <NavLink className="nav-link" to='/flexwidthslider'>Flex_Width_Slider</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to='/midislider'>Midi_Sound_Player</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
