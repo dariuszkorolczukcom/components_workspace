@@ -1,6 +1,6 @@
 This is a workspace for components I created for future reuse.
 
-Check the working examples here:
+Check the working examples on the DigitalOcean server pulled from this rep:
 
 http://www.crazystuff.club
 
