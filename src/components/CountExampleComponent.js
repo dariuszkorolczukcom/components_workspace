@@ -16,10 +16,7 @@ class Count extends React.Component {
     render() {
         return (
             <div>
-                Count: {this.state.count}
-                <div style={{ marginTop: '10px' }} />
-                <input type='button' onClick={this.onclick.bind(this, 'add')} value='Inc' />
-                <input type='button' onClick={this.onclick.bind(this, 'sub')} value='Dec' />
+            <input type='button' onClick={this.onclick.bind(this, 'add')} value='Inc' /><input type='button' onClick={this.onclick.bind(this, 'sub')} value='Dec' />    Count: {this.state.count}  
             </div>
         )
     }

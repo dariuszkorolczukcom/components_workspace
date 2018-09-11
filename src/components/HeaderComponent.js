@@ -39,9 +39,6 @@ class Header extends Component {
                                 <NavItem>
                                     <NavLink className="nav-link" to='/midislider'>Midi_Sound_Player</NavLink>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/countexample'>Count_Example</NavLink>
-                                </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
