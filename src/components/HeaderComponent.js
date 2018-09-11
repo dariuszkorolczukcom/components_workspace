@@ -27,7 +27,7 @@ class Header extends Component {
                         <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav tabs navbar>
-                            <NavItem>
+                                <NavItem>
                                     <NavLink className="nav-link" to='/home'>Home</NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -38,6 +38,9 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/midislider'>Midi_Sound_Player</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to='/countexample'>Count_Example</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>

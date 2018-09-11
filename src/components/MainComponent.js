@@ -5,6 +5,7 @@ import Footer from './FooterComponent';
 import WidthSlider from './WidthSliderComponent';
 import FlexWidthSlider from './FlexWidthSliderComponent';
 import MidiSlider from './MidiComponent';
+import Count from './CountExampleComponent';
 import { Link } from 'react-router-dom';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -39,6 +40,7 @@ class Main extends Component {
                     <Route path="/widthslider" component={WidthSlider} />
                     <Route path="/flexwidthslider" component={FlexWidthSlider} />
                     <Route path="/midislider" component={MidiSlider} />
+                    <Route path="/countexample" component={Count} />
                     <Redirect to="/home" />
                 </Switch>
                 <Footer />

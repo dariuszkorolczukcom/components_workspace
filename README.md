@@ -23,7 +23,7 @@ https://nodejs.org)
 
 COMPONENTS:
 ---
-[12 step Width Slider]
+[12_step_Width_Slider]
 
 using the slider dynamically changes the width of a column using bootstrap class.
 
@@ -31,12 +31,12 @@ using the slider dynamically changes the width of a column using bootstrap class
 2. then it is passed to the <Col> inside the className (using backquotes)
 
 ---
-[Flex Width Slider]
+[Flex_Width_Slider]
 
 does the same job as the [12 step Width Slider], but changes the style width of the columns
 
 ---
-[Midi Sound Player]
+[Midi_Sound_Player]
 
 plays chosen Midi sound
 
@@ -45,6 +45,13 @@ plays chosen Midi sound
 3. set the sound duration and send it to state
 4. press play to play the chosen sound
 5. press 'MIDI SOUNDS' button to open control panel (volume, equalizer, echo)
+
+---
+
+[Count_Example]
+
+shows the right way to add and substract a value to the state
+1. Adds, Substracts and display the state count value
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
