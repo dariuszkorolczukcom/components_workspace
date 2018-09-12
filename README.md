@@ -53,6 +53,10 @@ plays chosen Midi sound
 shows the right way to add and substract a value to the state
 1. Adds, Substracts and display the state count value
 
+[Clock]
+
+example of using lifecycle methods with simple clock
+
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
