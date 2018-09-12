@@ -22,6 +22,9 @@ https://nodejs.org)
 
 
 COMPONENTS:
+
+---
+[Simplest HOC] - the &lt;Title>&lt;/Title> is sending children to HOC, which adds &lt;h1> tag to it, and returns it
 ---
 [12_step_Width_Slider]
 
