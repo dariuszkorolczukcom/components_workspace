@@ -101,9 +101,9 @@ class DailyLimit extends Component {
     render() {
         const RenderPercent = () => {
             let perCent = (this.state.currentSpend / this.state.dailySpendLimit * 100).toFixed(0)
-            if (Number.isInteger(perCent*1))
+            if (Number.isInteger(perCent * 1))
                 return <div>Today you spend {perCent}% of the limit</div>
-                else return <div></div>
+            else return <div></div>
         }
         return (
             <Container className="container col-12 mt-2" style={mainContainer}>
