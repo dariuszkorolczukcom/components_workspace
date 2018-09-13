@@ -145,6 +145,4 @@ class MidiSlider extends Component {
     }
 };
 
-const style = { width: 600, margin: 50 };
-
 export default MidiSlider;

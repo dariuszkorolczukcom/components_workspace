@@ -4,8 +4,8 @@ Check the working examples on the DigitalOcean server pulled from this rep:
 
 http://www.crazystuff.club
 
-1. install the latest version of Nodejs 
-https://nodejs.org)
+1. install the latest version of Nodejs and npm (or yarn)
+<link to='https://nodejs.org'>Nodejs website</link>
 
 2. download the repository
 <code>git clone https://github.com/dariuszkorolczukcom/components_workspace.git</code>
@@ -24,7 +24,14 @@ https://nodejs.org)
 COMPONENTS:
 
 ---
-[Simplest HOC] - the &lt;Title>&lt;/Title> is sending children to HOC, which adds &lt;h1> tag to it, and returns it
+[Simplest HOC]
+The &lt;Title>&lt;/Title> is sending children to HOC, which adds &lt;h1> tag to it, and returns it
+
+---
+[Clock]
+
+example of using lifecycle methods with simple clock
+
 ---
 [12_step_Width_Slider]
 
@@ -50,15 +57,10 @@ plays chosen Midi sound
 5. press 'MIDI SOUNDS' button to open control panel (volume, equalizer, echo)
 
 ---
-
 [Count_Example]
 
 shows the right way to add and substract a value to the state
 1. Adds, Substracts and display the state count value
-
-[Clock]
-
-example of using lifecycle methods with simple clock
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

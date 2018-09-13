@@ -8,6 +8,7 @@ import MidiSlider from './MidiComponent';
 import Count from './CountExampleComponent';
 import Clock from './ClockComponent';
 import Title from './HigherOrderComponent'
+import DailyLimit from './DailyLimitComponent';
 import { Link } from 'react-router-dom';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -24,13 +25,14 @@ class Main extends Component {
         const HomePage = () => {
             return (
                 <div className='container'>
-                    
+                     <Link to="/dailylimit"><h1>Daily Limit Component</h1></Link>
                     <ul>
+                        
                         <li><Title>This is an output of a HOC</Title></li>
                         <li>Current date and time:<p><Clock/> - if you add 20 clocks, after a while you'll notice, that they are indeed asynchronous!</p> </li>
-                        <Link to="widthslider"><li>12 step Width Slider<p>Use the slider to dynamically change the width of a columns using bootstrap class col value.</p></li></Link>
-                        <Link to="flexwidthslider"><li>Flex Width Slider<p>Use the slider to dynamically change the width of a columns using style=width value.</p></li></Link>
-                        <Link to="midislider"><li>Midi Sound Player<p>plays chosen Midi sound</p></li></Link>
+                        <Link to="/widthslider"><li>12 step Width Slider<p>Use the slider to dynamically change the width of a columns using bootstrap class col value.</p></li></Link>
+                        <Link to="/flexwidthslider"><li>Flex Width Slider<p>Use the slider to dynamically change the width of a columns using style=width value.</p></li></Link>
+                        <Link to="/midislider"><li>Midi Sound Player<p>plays chosen Midi sound</p></li></Link>
                         <li>Correct way to increment state because of it's being asynchronous<p><Count /></p></li>
                     </ul>
                 </div>
@@ -46,6 +48,7 @@ class Main extends Component {
                     <Route path="/flexwidthslider" component={FlexWidthSlider} />
                     <Route path="/midislider" component={MidiSlider} />
                     <Route path="/countexample" component={Count} />
+                    <Route path="/dailylimit" component={DailyLimit}/>
                     <Redirect to="/home" />
                 </Switch>
                 <Footer />
