@@ -42,6 +42,9 @@ class Header extends Component {
                                 <NavItem>
                                     <NavLink className="nav-link" to='/dailylimit'>Daily_Spend_Limit</NavLink>
                                 </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to='/video'>Video</NavLink>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
